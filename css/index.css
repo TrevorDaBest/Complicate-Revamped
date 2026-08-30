@@ -1,0 +1,26 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#copyright {
+    color: #AAAAAA;
+    font-size: 11px;
+    text-align: center;
+}
+
+nav {
+    background-color: navy;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 25px;
+}
