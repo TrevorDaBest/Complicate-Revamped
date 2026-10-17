@@ -47,6 +47,7 @@ hostGame.addEventListener('click', async (e) => {
             status: 0, //0 = wait, 1 = play, 2 = game over
             mode: 0, //0 = complicate, 1 = uess the function
             tier: 1,
+            turn: 0,
             players: [],
             history: [{"bot": "\\pi r^2"}]
         });

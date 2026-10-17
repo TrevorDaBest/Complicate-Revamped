@@ -1,0 +1,25 @@
+.player {
+    background: #555555;
+    width: fit-content;
+    font-size: 35px;
+    padding: 10px;
+    user-select: none;
+    border: 5px solid green;
+    border-radius: 15px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#complication {
+    text-align: center;
+}
+
+#players h2, 
+#players #complication {
+    font-size: 1.7em;
+}
