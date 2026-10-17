@@ -54,10 +54,16 @@ var latexInp;
 
 async function runApp() {
     const room = await getRoom();
-    const updates = onSnapshot(room, (r) => {
+    const updates = onSnapshot(room, async (r) => {
         //Set pidx
         pidx = r.data().players.indexOf(name);
+        console.log(pidx);
         const roomData = r.data();
+
+        //Stop overflow
+        if (r.data().turn >= r.data().players.length) {
+            await updateDoc(room, {"turn": 0});
+        }
 
         if (r.data().status === 1) {
             //Start Game
